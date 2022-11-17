@@ -4,3 +4,458 @@
 @import 'global';
 @import 'media';
 @import 'libs';
+
+.header {
+  background-image: url('../images/bg-header.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 1082px;
+  &__title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 103px;
+    color: $acsent;
+    padding-top: 128px;
+    margin-right: 29px;
+    @extend%ubuntu-700;
+  }
+  &__span {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: $acsent;
+    @extend%ubuntu-700;
+  }
+  &__desc {
+    font-size: 26px;
+    line-height: 120%;
+    color: $default;
+    max-width: 542px;
+    margin-bottom: 63px;
+  }
+}
+
+.header-promo {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 31px 30px;
+  margin-bottom: 13px;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__order {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+  }
+  &__order-text {
+    font-size: 20px;
+    line-height: 120%;
+    max-width: 438px;
+    span {
+      color: $acsent;
+    }
+  }
+  &__order-btn {
+    margin-top: 36px;
+    @extend%btn;
+  }
+  &__social-img {
+    background: linear-gradient(
+      99.89deg,
+      rgba(255, 255, 255, 0.24) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    box-shadow: 4px 4px 8px -2px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+
+    border-radius: 17px;
+    padding: 19px;
+  }
+}
+
+.info {
+  padding: 134px 0 162px;
+  background-image: url('../images/bg-info.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 298px);
+    gap: 90px 88px;
+    justify-content: center;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item-wrapper {
+    background-color: #dddddd;
+    opacity: 0.9;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 298px;
+    height: 118px;
+    margin-top: -25px;
+    z-index: -1;
+  }
+  &__item-text {
+    font-size: 20px;
+    line-height: 120%;
+    padding: 23px 36px;
+  }
+}
+
+.video {
+  padding: 63px 0 99px;
+  background-image: url('../images/bg-video.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  &__title {
+    @extend%ubuntu-700;
+    font-size: 48px;
+    line-height: 120%;
+    max-width: 1237px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    span {
+      color: $acsent;
+    }
+  }
+  &__popup {
+    height: 604px;
+    max-width: 1073px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  &__play {
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.5s;
+    }
+  }
+
+  &__btn {
+    @extend%btn;
+  }
+}
+
+.author {
+  padding: 108px 0 26px;
+  background-image: url('../images/author/author.png');
+  background-repeat: no-repeat;
+  background-position: 59% 100%;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__btn {
+    @extend%btn;
+  }
+}
+
+.author-info {
+  &__top {
+    max-width: 450px;
+    text-align: end;
+    margin-bottom: 59px;
+  }
+  &__top-title {
+    @extend%ubuntu-700;
+    font-size: 64px;
+    line-height: 120%;
+    color: $acsent;
+  }
+  span {
+    font-size: 26px;
+    line-height: 120%;
+  }
+
+  &__desc {
+    list-style: disc !important;
+  }
+  &__item {
+    margin-bottom: 22px;
+    @extend%manrope-500;
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 574px;
+    &::marker {
+      color: $acsent;
+    }
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.author-card {
+  z-index: -1;
+  &__img {
+    margin-bottom: 52px;
+  }
+}
+
+.description {
+  padding: 33px 37px;
+  background-image: url('../images/bg-galery.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 40px;
+  }
+  &__item-one {
+    background: #f0f0f0;
+    opacity: 0.85;
+    box-shadow: 4px 4px 8px -2px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 17px;
+    padding: 22px 48px 22px 22px;
+    max-width: 332px;
+  }
+  &__item-two {
+    background: #f0f0f0;
+    opacity: 0.85;
+    box-shadow: 4px 4px 8px -2px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 17px;
+    padding: 22px 35px 22px 22px;
+    max-width: 569px;
+  }
+  &__item-three {
+    background: #f0f0f0;
+    opacity: 0.85;
+    box-shadow: 4px 4px 8px -2px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 17px;
+    padding: 22px;
+    max-width: 332px;
+  }
+}
+
+.gallery {
+  display: flex;
+  gap: 44px;
+  margin-bottom: 76px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 44px;
+  }
+  &__btn {
+    @extend%btn;
+  }
+}
+
+.suppliers {
+  &__inner {
+    display: flex;
+  }
+  padding: 40px 0 11px;
+  background-image: url('../images/suppliers.png');
+  background-repeat: no-repeat;
+  background-position: 100%;
+  &__sub-title {
+    padding-top: 145px;
+    font-size: 24px;
+    line-height: 120%;
+    @extend%manrope-500;
+  }
+  &__title {
+    @extend%ubuntu-700;
+    font-size: 64px;
+    line-height: 120%;
+    color: $acsent;
+    margin-bottom: 36px;
+  }
+  &__list {
+    list-style: disc !important;
+  }
+  &__list-item {
+    font-size: 26px;
+    line-height: 120%;
+    @extend%manrope-500;
+    margin-bottom: 19px;
+    margin-left: 30px;
+    span {
+      @extend%manrope-700;
+    }
+    &::marker {
+      color: $acsent;
+    }
+    &:last-child {
+      margin-bottom: 46px;
+    }
+  }
+  &__btn {
+    @extend%btn;
+    background-color: #218ab7;
+    padding: 29px 105px 29px 161px;
+    position: relative;
+    img {
+      width: 31px;
+      height: 28px;
+      position: absolute;
+      left: 100px;
+      top: 25px;
+    }
+  }
+}
+
+.contacts {
+  padding: 126px 0;
+  background-image: url('../images/background-contact.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  &__title {
+    @extend%ubuntu-700;
+    font-size: 64px;
+    line-height: 120%;
+    margin-bottom: 36px;
+    margin-bottom: 98px;
+    span {
+      color: $acsent;
+    }
+  }
+  &__btn {
+    @extend%btn;
+    background-color: #218ab7;
+    padding: 29px 105px 29px 161px;
+    position: relative;
+    img {
+      width: 31px;
+      height: 28px;
+      position: absolute;
+      left: 100px;
+      top: 25px;
+    }
+  }
+}
+
+.modal,
+.modal-ok {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.399);
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+  &__form {
+    max-width: 720px;
+    height: 859px;
+    padding: 60px 72px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+  }
+  &__form-closet {
+    font-size: 20px;
+    line-height: 49px;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s;
+    }
+  }
+
+  &__form-title {
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 84px;
+  }
+  &__form-input {
+    background-color: #d9d9d9;
+    border: none;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 76px;
+    outline: none;
+    padding: 22px 39px;
+    &:last-child {
+      margin-bottom: 57px;
+    }
+  }
+  &__form-btn {
+    @extend%btn;
+    margin-bottom: 30px;
+  }
+  &__form-info {
+    display: flex;
+    text-align: start;
+    font-size: 18px;
+    line-height: 25px;
+    @extend%manrope-500;
+  }
+  &__form-checkbox {
+    margin-right: 25px;
+  }
+}
+
+.showModal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-ok {
+  &__inner {
+    max-width: 720px;
+    height: 577px;
+    padding: 143px 184px 187px 184px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+    p {
+      @extend%ubuntu-700;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+  &__block {
+    margin-bottom: 79px;
+  }
+  &__title {
+    @extend%ubuntu-700;
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 10px;
+    color: $acsent;
+  }
+}

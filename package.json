@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "del": "^6.0.0",
     "imagemin": "^8.0.1",
     "jquery": "^3.6.0",
