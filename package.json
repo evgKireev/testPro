@@ -1,5 +1,5 @@
 {
-  "name": "start_gulp",
+  "name": "pro",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
@@ -25,5 +25,13 @@
   },
   "author": "Yevgeniy Kireev",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evgKireev/testPro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evgKireev/testPro/issues"
+  },
+  "homepage": "https://github.com/evgKireev/testPro#readme",
   "description": ""
 }
