@@ -93,9 +93,6 @@
       font-size: 48px;
       line-height: 57px;
     }
-    &__btn {
-      padding: 22px 98px 22px 135px;
-    }
   }
 
   .contacts {
@@ -204,7 +201,7 @@
   .info {
     padding: 82px 0;
     &__inner {
-      gap: 68px 66px;
+      gap: 50px 20px;
     }
 
     &__item-wrapper {
@@ -407,8 +404,8 @@
     }
   }
   .header {
-    background-position: top;
-    background-size: 304px 380px;
+    background-position: right top;
+    background-size: 460px 539px;
     &__title {
       font-size: 30px;
       line-height: 34px;
@@ -464,18 +461,21 @@
   }
   .author {
     padding: 20px 0 10px;
-    background-position: top right;
+    background-position: right top;
+    background-size: 590px 640px;
     &__inner {
       flex-direction: column-reverse;
       align-items: flex-start;
+      margin-left: 90px;
     }
     &__btn {
       padding: 15px 70px;
       font-size: 16px;
     }
   }
-
   .author-info {
+    align-self: start;
+    margin-left: 0;
     &__top {
       max-width: 290px;
       margin-bottom: 32px;
@@ -498,9 +498,6 @@
       }
     }
   }
-  .child-active {
-    align-self: center;
-  }
 
   .author-card {
     &__img {
@@ -509,22 +506,38 @@
       margin-bottom: 8px;
     }
   }
-  .suppliers {
-    padding: 30px 0 11px;
+  .description {
+    padding: 26px 36px;
     background-image: none;
-    &__sub-title {
-      padding-top: 49px;
-      font-size: 8px;
-      line-height: 10px;
+    text-align: center;
+    &__inner {
+      gap: 16px 100px;
+      margin-bottom: 17px;
+      justify-content: center;
     }
-    &__title {
-      font-size: 16px;
-      line-height: 19px;
+
+    &__item-one {
+      font-size: 13px;
+      line-height: 15px;
+      padding: 9px 9px 9px 10px;
+      max-width: 191px;
     }
-    &__list-item {
-      font-size: 10px;
-      line-height: 12px;
+    &__item-two {
+      font-size: 13px;
+      line-height: 15px;
+      padding: 9px 7px 9px 10px;
+      max-width: 373px;
     }
+    &__item-three {
+      font-size: 13px;
+      line-height: 15px;
+      padding: 9px 9px 9px 15px;
+      max-width: 210px;
+    }
+  }
+  .suppliers {
+    padding: 30px 0 11px 80px;
+    background-image: none;
     &__btn {
       padding: 15px 70px 16px 113px;
       font-size: 16px;
@@ -557,6 +570,51 @@
     }
     &__form-info {
       font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 715px) {
+  .header {
+    background-position: right top;
+  }
+  .header-info {
+    &__order-btn {
+      margin-top: 27px;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 11px 32px;
+    }
+  }
+  .video {
+    text-align: center;
+    &__title {
+      text-align: center;
+      font-size: 28px;
+    }
+    &__popup {
+      height: 380px;
+      max-width: 490px;
+      background-size: 490px 400px;
+    }
+    &__play {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    &__btn {
+      font-size: 14px;
+    }
+  }
+  .author {
+    padding: 20px 0 10px;
+    background-position: right top;
+    background-size: 402px 400px;
+  }
+  .author-info {
+    &__item {
+      max-width: 100%;
     }
   }
 }
@@ -681,6 +739,7 @@
     text-align: center;
     &__inner {
       gap: 30px;
+      margin-left: 0;
     }
     &__btn {
       font-size: 9px;
@@ -717,36 +776,6 @@
       &:last-child {
         margin-bottom: 22px;
       }
-    }
-  }
-
-  .description {
-    padding: 26px 36px;
-    background-image: none;
-    text-align: center;
-    &__inner {
-      gap: 10px 3px;
-      margin-bottom: 17px;
-      justify-content: center;
-    }
-
-    &__item-one {
-      font-size: 13px;
-      line-height: 15px;
-      padding: 9px 9px 9px 10px;
-      max-width: 191px;
-    }
-    &__item-two {
-      font-size: 13px;
-      line-height: 15px;
-      padding: 9px 7px 9px 10px;
-      max-width: 373px;
-    }
-    &__item-three {
-      font-size: 13px;
-      line-height: 15px;
-      padding: 9px 9px 9px 15px;
-      max-width: 210px;
     }
   }
 
@@ -888,7 +917,7 @@
     background-position: 195% 20%;
     background-size: 335px 277px;
 
-    &__inner{
+    &__inner {
       gap: 20px;
     }
   }

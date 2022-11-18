@@ -278,13 +278,13 @@
 }
 
 .suppliers {
-  &__inner {
-    display: flex;
-  }
   padding: 40px 0 11px;
   background-image: url('../images/suppliers.png');
   background-repeat: no-repeat;
   background-position: 100%;
+  &__inner {
+    display: flex;
+  }
   &__sub-title {
     padding-top: 145px;
     font-size: 24px;
