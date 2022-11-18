@@ -363,6 +363,26 @@
       padding: 40px 20px;
     }
   }
+  .modal-ok {
+    &__inner {
+      width: 360px;
+      height: 350px;
+      padding: 50px 25px 50px;
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    &__block {
+      margin-bottom: 65px;
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 @media (max-width: 850px) {
