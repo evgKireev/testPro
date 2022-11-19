@@ -25,7 +25,7 @@ $(document).ready(function () {
         th.trigger('reset');
       }, 1000);
     });
-    return modal.classList.remove('showModal');
+    return false;
   });
 });
 
