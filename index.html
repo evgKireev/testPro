@@ -337,18 +337,42 @@
       </div>
     </section>
     <div class="modal">
-      <form class="modal__form" action="#">
+      <form class="modal__form" action="send.php" method="post">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="E-COMMERCE" />
+        <input type="hidden" name="admin_email" value="bob1_k@mail.ru" />
+        <input type="hidden" name="form_subject" value="Form Modal" />
+        <!-- END Hidden Required Fields -->
+
         <span class="modal__form-closet">x</span>
         <p class="modal__form-title"></p>
         <div class="modal__form-input-box">
-          <input class="modal__form-input" type="text" placeholder="Имя" />
           <input
             class="modal__form-input"
             type="text"
+            name="fio"
+            placeholder="Имя"
+            required
+          />
+          <input
+            class="modal__form-input"
+            type="text"
+            name="nick"
             placeholder="Ник в Telegram"
           />
-          <input class="modal__form-input" type="text" placeholder="Email" />
-          <input class="modal__form-input" type="text" placeholder="Телефон" />
+          <input
+            class="modal__form-input"
+            type="text"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            class="modal__form-input"
+            type="text"
+            name="tel"
+            placeholder="Телефон"
+          />
         </div>
         <button class="modal__form-btn" type="submit"></button>
         <div class="modal__form-info">
