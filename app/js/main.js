@@ -8,6 +8,27 @@ const modalBtn = document.querySelector('.modal__form-btn');
 const modalTitle = document.querySelector('.modal__form-title');
 const modalCloset = document.querySelector('.modal__form-closet');
 
+$(document).ready(function () {
+  $('form').submit(function () {
+    var th = $(this);
+    $.ajax({
+      type: 'POST',
+      url: 'mail.php',
+      data: th.serialize(),
+    }).done(function () {
+      modal.classList.remove('showModal');
+      modalOk.classList.add('showModal');
+      setTimeout(() => {
+        modalOk.classList.remove('showModal');
+      }, 3000);
+      setTimeout(function () {
+        th.trigger('reset');
+      }, 1000);
+    });
+    return false;
+  });
+});
+
 function render() {
   modalCloset.addEventListener('click', () => {
     modal.classList.remove('showModal');

@@ -337,7 +337,13 @@
       </div>
     </section>
     <div class="modal">
-      <form class="modal__form" action="mail.php" method="post">
+      <form class="modal__form">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="E-COMMERCE" />
+        <input type="hidden" name="admin_email" value="bob1_k@mail.ru" />
+        <input type="hidden" name="form_subject" value="Form Modal" />
+        <!-- END Hidden Required Fields -->
+
         <span class="modal__form-closet">x</span>
         <p class="modal__form-title"></p>
         <div class="modal__form-input-box">
@@ -353,6 +359,7 @@
             type="text"
             name="nick"
             placeholder="Ник в Telegram"
+            required
           />
           <input
             class="modal__form-input"
@@ -370,7 +377,7 @@
         </div>
         <button class="modal__form-btn" type="submit"></button>
         <div class="modal__form-info">
-          <input class="modal__form-checkbox" type="checkbox" />
+          <input class="modal__form-checkbox" type="checkbox" required/>
           <p>
             Я согласен на обработку моих персональных данных в соответствии с
             Условиями и Договором оферты
@@ -390,6 +397,7 @@
         </p>
       </div>
     </div>
-    <script src="app/js/main.min.js" type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="app/js/main.js" type="module"></script>
   </body>
 </html>
