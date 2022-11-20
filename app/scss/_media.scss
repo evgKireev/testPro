@@ -1,3 +1,4 @@
+@import '_vars.scss';
 @media (max-width: 1600px) {
   .header {
     background-position: top right;
@@ -927,10 +928,20 @@
   .header {
     background-position: 115% 30%;
     background-size: 295px 369px;
+    &__desc {
+      font-weight: 500;
+      font-size: 10px;
+      margin-top: 3px;
+      max-width: 207px;
+      margin-bottom: 167px;
+    }
+    &__title {
+      padding-top: 23px;
+    }
   }
   .header-promo {
     grid-template-columns: repeat(2, 130px);
-    gap: 28px 27px;
+    gap: 10px 20px;
     margin-bottom: 7px;
     justify-content: center;
     &__img {
@@ -942,8 +953,8 @@
       gap: 9px;
     }
     &__order-text {
-      font-size: 10px;
-      line-height: 12px;
+      font-size: 9px;
+      line-height: 11px;
       max-width: 159px;
     }
     &__order-btn {
@@ -961,6 +972,7 @@
     &__title {
       font-size: 15px;
       max-width: 280px;
+      font-weight: 500;
       padding-bottom: 28px;
       text-align: start;
       margin: 0 auto;
@@ -1067,7 +1079,7 @@
   }
 
   .gallery {
-    gap: 14px;
+    gap: 15px;
     margin-bottom: 14px;
     &__item {
       gap: 14px;
@@ -1128,6 +1140,36 @@
         top: 10px;
         left: 30px;
       }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    background-position: 115% 23%;
+    background-size: 262px 327px;
+    &__title {
+      padding-top: 17px;
+    }
+    &__desc {
+      margin-bottom: 137px;
+    }
+  }
+  .info {
+    &__item-text {
+      font-size: 8px;
+      line-height: 10px;
+    }
+  }
+  .author-info {
+    &__item {
+      font-size: 10px;
+    }
+  }
+  .gallery {
+    gap: 12px;
+    &__item {
+      gap: 8px;
     }
   }
 }
