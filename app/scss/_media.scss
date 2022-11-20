@@ -622,13 +622,14 @@
 
 @media (max-width: 480px) {
   .header {
-    background-position: 115% 25%;
+    background-position: 102% 11%;
     background-size: 304px 380px;
     &__title {
       font-size: 30px;
       line-height: 34px;
       padding-top: 34px;
       margin-right: 5px;
+      margin-left: 35px;
     }
     &__span {
       font-size: 20px;
@@ -639,6 +640,7 @@
       line-height: 14px;
       margin-bottom: 156px;
       max-width: 205px;
+      margin-left: 35px;
     }
   }
 
@@ -933,16 +935,17 @@
       font-size: 10px;
       margin-top: 3px;
       max-width: 207px;
-      margin-bottom: 167px;
+      margin-bottom: 112px;
+      margin-left: 0;
     }
     &__title {
       padding-top: 23px;
+      margin-left: 0;
     }
   }
   .header-promo {
     grid-template-columns: repeat(2, 130px);
-    gap: 10px 20px;
-    margin-bottom: 7px;
+    gap: 8px 20px;
     justify-content: center;
     &__img {
       width: 130px;
@@ -1146,13 +1149,15 @@
 
 @media (max-width: 320px) {
   .header {
-    background-position: 115% 23%;
+    background-position: 115% 26%;
     background-size: 262px 327px;
     &__title {
       padding-top: 17px;
+      margin-left: 0;
     }
     &__desc {
-      margin-bottom: 137px;
+      margin-bottom: 105px;
+      margin-left: 0;
     }
   }
   .info {
